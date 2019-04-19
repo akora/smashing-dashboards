@@ -96,7 +96,6 @@ PLATFORMS
 
 DEPENDENCIES
   smashing
-  twitter (>= 5.9.0)
 
 BUNDLED WITH
    1.17.2
