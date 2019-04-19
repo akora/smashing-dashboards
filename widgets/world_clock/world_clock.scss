@@ -1,0 +1,72 @@
+.widget.widget-world-clock {
+  $dark-text: #333;
+  $dark-background: grey;
+  font-size: 2em;
+  padding: 0;
+
+  > ul li {
+    box-sizing: border-box;
+    display: inline-block;
+    color: $dark-text;
+
+    &.primary {
+      font-size: 2em;
+      margin-top: -185px;
+
+      .location {
+        margin-bottom: -10px;
+      }
+
+      .placeholder {
+        background: white;
+      }
+    }
+  }
+
+  .hours {
+    li {
+      background: white;
+      width: 4.16%;
+
+      &:not(:last-child) {
+        border-right: 1px solid;
+      }
+    }
+
+    .dark {
+      background: $dark-background;
+      color: white;
+    }
+  }
+
+  .locations {
+    text-align: left;
+
+    li {
+      position: absolute;
+    }
+
+    .placeholder {
+      height: 30px;
+      width: 2px;
+      background: $dark-background;
+    }
+
+    .label {
+      position: relative;
+      color: $dark-background;
+
+      .location {
+        margin-left: -50%;
+        &.local {
+          color: white;
+        }
+      }
+
+      .minute {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
