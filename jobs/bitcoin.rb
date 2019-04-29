@@ -4,7 +4,7 @@ require 'uri'
 
 btc_price = 0
 
-SCHEDULER.every '2m' do
+SCHEDULER.every '30m' do
   last_price = btc_price
   # Grab current bitcoin price from coinbase
   uri = URI.parse('https://api.coinbase.com/v2/prices/BTC-USD/spot')
