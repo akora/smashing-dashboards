@@ -16,20 +16,28 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .title {
     color: $title-color;
+    font-size: 2em;
   }
 
   .value {
     color: $value-color;
+    font-size: 3em;
   }
 
   .change-rate {
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 1em;
     color: $value-color;
+  }
+
+  i {
+    padding-right: 0.5em;
   }
 
   .more-info {
     color: $moreinfo-color;
+    padding-bottom: 1em;
+    font-size: 1em;
   }
 
   .updated-at {

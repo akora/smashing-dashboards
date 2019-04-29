@@ -3,11 +3,12 @@ class Dashing.Number extends Dashing.Widget
 
   @accessor 'difference', ->
     if @get('last')
-      last = parseInt(@get('last'))
-      current = parseInt(@get('current'))
+      last = parseFloat(@get('last'))
+      current = parseFloat(@get('current'))
       if last != 0
-        diff = Math.abs(Math.round((current - last) / last * 100))
-        "#{diff}%"
+        # diff = Math.abs(Math.round((current - last) / last * 100))
+        diff = Math.abs(current - last).toFixed(2)
+        "#{diff}"
     else
       ""
 
