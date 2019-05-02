@@ -4,7 +4,7 @@ require 'uri'
 
 eth_price = 0
 
-SCHEDULER.every '2m' do
+SCHEDULER.every '30m' do
   last_price = eth_price
   uri = URI.parse('https://api.coinbase.com/v2/prices/ETH-USD/spot')
   http = Net::HTTP.new(uri.host, uri.port)

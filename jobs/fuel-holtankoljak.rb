@@ -3,7 +3,7 @@ require 'httparty'
 
 fuel_price_only = 0
 
-SCHEDULER.every '2m' do
+SCHEDULER.every '4h' do
   last_price = fuel_price_only
   url = "https://holtankoljak.hu"
   unparsed_page = HTTParty.get(url)

@@ -4,7 +4,7 @@ require 'uri'
 
 gbp_price = 0
 
-SCHEDULER.every '2m' do
+SCHEDULER.every '30m' do
   last_price = gbp_price
   uri = URI.parse('https://api.exchangeratesapi.io/latest?base=GBP&symbols=HUF')
   http = Net::HTTP.new(uri.host, uri.port)

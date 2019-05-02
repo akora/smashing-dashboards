@@ -4,7 +4,7 @@ require 'uri'
 
 chf_price = 0
 
-SCHEDULER.every '2m' do
+SCHEDULER.every '30m' do
   last_price = chf_price
   uri = URI.parse('https://api.exchangeratesapi.io/latest?base=CHF&symbols=HUF')
   http = Net::HTTP.new(uri.host, uri.port)
