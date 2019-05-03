@@ -1,0 +1,13 @@
+<!-- https://en.wikipedia.org/wiki/Swatch_Internet_Time -->
+<script>
+  $(function() {
+    function beatTime() {
+      $('.beat').html(((moment().utcOffset(1).seconds() + (moment().utcOffset(1).minutes() * 60) + (moment().utcOffset(1).hours() * 3600)) / 86.4).toFixed(2));
+    }
+    beatTime();
+    setInterval(beatTime, 1000);
+  });
+</script>
+<h1 class="title" data-bind="title"></h1>
+<h1>@<big class="beat">&nbsp;</big></h1>
+<p class="more-info" data-bind="moreinfo"></p>
