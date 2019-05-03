@@ -1,0 +1,16 @@
+<!-- https://en.wikipedia.org/wiki/Unix_time -->
+<script>
+  $(function() {
+    function unixTime() {
+      var d = new Date();
+      var seconds_since_epoch = Math.round(d.getTime() / 1000);
+      seconds_since_epoch_formatted = seconds_since_epoch.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      document.getElementById("unixTime").innerHTML = seconds_since_epoch_formatted;
+    }
+    unixTime();
+    setInterval(unixTime, 1000);
+  });
+</script>
+<h1 class="title" data-bind="title"></h1>
+<h1 id="unixTime"></h1>
+<p class="more-info">since<br/>00:00:00<br/>Thursday<br/>1 January 1970</p>
