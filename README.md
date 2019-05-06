@@ -26,6 +26,8 @@ Example:
 
 http://192.168.100.101:3030/world-clock-and-countdowns
 
+### World Clock and Countdowns
+
 The World Clock and countdowns dashboard contains the following widgets:
 
 * [world_clock](https://gist.github.com/weilu/7688343)
@@ -36,6 +38,14 @@ The World Clock and countdowns dashboard contains the following widgets:
 The last two widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
 ![world clock and countdowns dashboard sample](world-clock-and-countdowns-dashboard-sample.png)
+
+### Exchange rates
+
+The Exchange rates dashboard lists crypto currencies as well as real currencies and regularly checks for rates in HUF.
+
+![exchange rates dashboard sample](exchange-rates-dashboard-sample.png)
+
+
 
 Tested on
 
