@@ -45,7 +45,11 @@ The Exchange rates dashboard lists crypto currencies as well as real currencies 
 
 ![exchange rates dashboard sample](exchange-rates-dashboard-sample.png)
 
+### Fuel prices
 
+This dashboard contains info on fuel prices in HUF. I'm actually scraping those data using [Nokogiri](https://nokogiri.org).
+
+![fuel prices dashboard sample](fuel-prices-dashboard-sample.png)
 
 Tested on
 
