@@ -35,6 +35,8 @@ The World Clock and countdowns dashboard contains the following widgets:
 
 The last two widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
+![world clock and countdowns dashboard sample](world-clock-and-countdowns-dashboard-sample.png)
+
 Tested on
 
 * Ubuntu 18.04.2 LTS
