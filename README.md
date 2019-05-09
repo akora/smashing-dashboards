@@ -37,19 +37,19 @@ The World Clock and countdowns dashboard contains the following widgets:
 
 The last two widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
-![world clock and countdowns dashboard sample](world-clock-and-countdowns-dashboard-sample.png)
+![world clock and countdowns dashboard sample](assets/images/world-clock-and-countdowns-dashboard-sample.png)
 
 ### Exchange rates
 
 The Exchange rates dashboard lists crypto currencies as well as real currencies and regularly checks for rates in HUF.
 
-![exchange rates dashboard sample](exchange-rates-dashboard-sample.png)
+![exchange rates dashboard sample](assets/images/exchange-rates-dashboard-sample.png)
 
 ### Fuel prices
 
 This dashboard contains info on fuel prices in HUF. I'm actually scraping those data using [Nokogiri](https://nokogiri.org).
 
-![fuel prices dashboard sample](fuel-prices-dashboard-sample.png)
+![fuel prices dashboard sample](assets/images/fuel-prices-dashboard-sample.png)
 
 Tested on
 
