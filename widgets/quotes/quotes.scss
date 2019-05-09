@@ -1,0 +1,47 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #2980B9;
+
+$author-color:       rgba(255, 255, 255, 0.7);
+$company-color:       rgba(255, 255, 255, 0.5);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-quotes {
+
+  background-color: $background-color;
+
+  #quote {
+    position: relative;
+    min-height: 200px;
+  }
+
+  .quote {
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.5em;
+    padding: 1em;
+  }
+
+  #footer-content {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .author {
+    color: $author-color;
+    font-size: 1em;
+    text-align: right;
+  }
+
+  .company {
+    color: $company-color;
+    font-size: 1em;
+    text-align: right;
+    font-style: italic;
+  }
+
+}
