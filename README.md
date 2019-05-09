@@ -1,4 +1,4 @@
-## Personal home dashboard based on the Smashing framework
+## Personal home dashboards based on the Smashing framework
 
 For Smashing check out http://smashing.github.io/smashing for more information.
 
@@ -24,7 +24,7 @@ Then visit your local IP, or http://localhost on port 3030 including the dashboa
 
 Example:
 
-http://192.168.100.101:3030/world-clock-and-countdowns
+http://<your-local-ip or localhost>:3030/world-clock-and-countdowns
 
 ### World Clock and Countdowns
 
