@@ -24,32 +24,50 @@ Then visit your local IP, or http://localhost on port 3030 including the dashboa
 
 Example:
 
-`http://<your-local-ip or localhost>:3030/world-clock-and-countdowns`
+`http://<your-local-ip or localhost>:3030/time`
 
-### World Clock and Countdowns
+### World Clock and other times
 
-The World Clock and countdowns dashboard contains the following widgets:
+The World Clock dashboard contains the following widgets:
 
 * [world_clock](https://gist.github.com/weilu/7688343)
-* [countdown](https://gist.github.com/ruleb/5353056)
+* clock (default Dashing/Smashing widget)
 * unix_time
 * beat_time
 
 The last two widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
-![world clock and countdowns dashboard sample](assets/images/world-clock-and-countdowns-dashboard-sample.png)
+![world clock and other times dashboard sample](assets/images/example-time-dashboard.png)
+
+### Countdowns
+
+The Countdowns dashboard lists future dates to countdown to. It is based on the [Countdown](https://gist.github.com/ioangogo/7b9208d0ef41c90ec322/) widget.
+
+![countdowns dashboard sample](assets/images/example-countdown-dashboard.png)
+
+### Crypto
+
+The Crypto dashboard lists various crypto currencies. It is based on the default number widget.
+
+![crypto dashboard sample](assets/images/example-crypto-dashboard.png)
 
 ### Exchange rates
 
-The Exchange rates dashboard lists crypto currencies as well as real currencies and regularly checks for rates in HUF.
+The Exchange rates dashboard lists real currencies and regularly checks for rates in HUF. It is also based on the default number widget.
 
-![exchange rates dashboard sample](assets/images/exchange-rates-dashboard-sample.png)
+![exchange rates dashboard sample](assets/images/example-currency-exchange-rates-dashboard.png)
 
 ### Fuel prices
 
 This dashboard contains info on fuel prices in HUF. I'm actually scraping those data using [Nokogiri](https://nokogiri.org).
 
-![fuel prices dashboard sample](assets/images/fuel-prices-dashboard-sample.png)
+![fuel prices dashboard sample](assets/images/example-fuel-prices-dashboard.png)
+
+### Random quotes
+
+This dashboard get data from the https://wisdomapi.herokuapp.com/v1/random API.
+
+![random quotes dashboard sample](assets/images/example-random-quotes-dashboard.png)
 
 Tested on
 
