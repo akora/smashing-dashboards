@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-utc-time {
+
+  .title {
+    color: $title-color;
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+    font-size: 1em;
+  }
+
+  #utcTimeZoneOffset {
+    color: $moreinfo-color;
+    font-size: 0.8em;
+    line-height: 4em;
+  }
+
+}

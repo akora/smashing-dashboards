@@ -1,0 +1,21 @@
+<script>
+  $(function() {
+      function utcDateTime() {
+        var today = new Date();
+        var UTCstring = today.toUTCString();
+        document.getElementById('utcTime').innerHTML = UTCstring.slice(17,25);
+        document.getElementById('utcTimeZoneOffset').innerHTML = UTCstring.slice(26,29);
+        document.getElementById('utcDate').innerHTML = UTCstring.slice(0,16);
+      }
+      utcDateTime()
+    setInterval(utcDateTime, 1000);
+  });
+</script>
+<h1 class="title" data-bind="title"></h1>
+<h1 id="utcTime"></h1>
+<div class="more-info">
+  <p id="utcTimeZoneOffset"></p>
+  <p id="utcDate"></p>
+</div>
+
+<!-- Sat, 11 May 2019 16:31:03 GMT -->
