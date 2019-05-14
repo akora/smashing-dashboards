@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="/assets/application.css">
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="/public/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
 
 </head>
   <body>
     <div id="container">
       <%= yield %>
     </div>
-  
+
     <% if development? %>
       <div id="saving-instructions">
         <p>Paste the following at the top of <i><%= params[:dashboard] %>.erb</i></p>
