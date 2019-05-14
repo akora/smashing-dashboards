@@ -2,11 +2,15 @@
 
 For Smashing check out http://smashing.github.io/smashing for more information.
 
-The dashboard pages are protected by HTTP basic auth (see `config.ru`), so first you need to set the auth credentials on line 21 in `config.ru`:
+The dashboard pages are protected by HTTP basic auth (see `config.ru`), so first you need to set the auth credentials in a separate `.env` file:
 
-```ruby
-@auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['', ''] # <=== change these!!
+Create a new `.env` file and add the following lines:
+
+```shell
+export BASIC_AUTH_USERNAME=<your username>
+export BASIC_AUTH_PASSWORD=<your password>
 ```
+*Note: The username or password must not contain special characters like '<' or '>'.*
 
 Once it's done in the root directory (in our case it's `smashing-dashboards`) for local testing start it with
 
@@ -31,11 +35,11 @@ Example:
 The World Clock dashboard contains the following widgets:
 
 * [world_clock](https://gist.github.com/weilu/7688343)
-* clock (default Dashing/Smashing widget)
+* utc_time
 * unix_time
 * beat_time
 
-The last two widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
+The last three widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
 ![world clock and other times dashboard sample](assets/images/example-time-dashboard.png)
 
