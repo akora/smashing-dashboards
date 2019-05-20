@@ -1,0 +1,21 @@
+<script>
+  $(function() {
+      function localDateTime() {
+        var today = new Date();
+        var LocalString = today.toString();
+        // document.write(LocalString);
+        // Mon May 20 2019 06:56:25 GMT+0200 (CEST)
+        document.getElementById('localTime').innerHTML = LocalString.slice(16,24);
+        document.getElementById('localTimeZoneOffset').innerHTML = LocalString.slice(25,40);
+        document.getElementById('localDate').innerHTML = LocalString.slice(0,15);
+      }
+      localDateTime()
+    setInterval(localDateTime, 1000);
+  });
+</script>
+<h1 class="title" data-bind="title"></h1>
+<h1 id="localTime"></h1>
+<div class="more-info">
+  <p id="localTimeZoneOffset"></p>
+  <p id="localDate"></p>
+</div>
