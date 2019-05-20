@@ -3,6 +3,8 @@
       function utcDateTime() {
         var today = new Date();
         var UTCstring = today.toUTCString();
+        // document.write(UTCstring);
+        // Mon, 20 May 2019 05:11:16 GMT
         document.getElementById('utcTime').innerHTML = UTCstring.slice(17,25);
         document.getElementById('utcTimeZoneOffset').innerHTML = UTCstring.slice(26,29);
         document.getElementById('utcDate').innerHTML = UTCstring.slice(0,16);
@@ -17,5 +19,3 @@
   <p id="utcTimeZoneOffset"></p>
   <p id="utcDate"></p>
 </div>
-
-<!-- Sat, 11 May 2019 16:31:03 GMT -->
