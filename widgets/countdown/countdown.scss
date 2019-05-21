@@ -3,6 +3,10 @@
 // ----------------------------------------------------------------------------
 $background-color:  #dc5945;
 
+$title-color: rgba(255, 255, 255, 1);
+$before-moreinfo-color: rgba(255, 255, 255, 0.6);
+$moreinfo-color: rgba(255, 255, 255, 0.8);
+
 // ----------------------------------------------------------------------------
 // Widget-clock styles
 // ----------------------------------------------------------------------------
@@ -10,23 +14,30 @@ $background-color:  #dc5945;
 
   background-color: $background-color;
 
-  h2 { font-size: 1.5em;
-       font-weight: normal;
-       text-transform: none;
-     }
-
-  h1 { font-size: 2em;}
+  h1 {
+    color: $title-color;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: none;
+  }
 
   .countdown-time {
+    font-size: 2em;
     margin-top: 10px;
     color: gold;
   }
 
   .before-more-info {
-    font-size: 15px;
+    color: $before-moreinfo-color;
+    font-size: 0.8em;
     position: absolute;
-    bottom: 52px;
+    bottom: 60px;
     left: 0;
     right: 0;
   }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
 }
