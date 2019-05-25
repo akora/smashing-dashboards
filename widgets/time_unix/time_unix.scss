@@ -8,7 +8,7 @@ $moreinfo-color: rgba(255, 255, 255, 0.6);
 // ----------------------------------------------------------------------------
 // Widget-text styles
 // ----------------------------------------------------------------------------
-.widget-local-time {
+.widget-time-unix {
 
   h1.title {
     color: $title-color;
@@ -22,7 +22,7 @@ $moreinfo-color: rgba(255, 255, 255, 0.6);
 
   .more-info {
     color: $moreinfo-color;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
 }
