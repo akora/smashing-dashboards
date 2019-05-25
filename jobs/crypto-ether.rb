@@ -14,6 +14,5 @@ SCHEDULER.every '30m' do
   json_response = JSON.parse(response.body)
   eth_price = json_response['data']['amount']
   eth_price = '%.2f' % eth_price.to_f
-  #puts eth_price
   send_event('ethprice', { current: eth_price.to_f, last: last_price.to_f })
 end
