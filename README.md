@@ -1,4 +1,4 @@
-## Personal home dashboards based on the Smashing framework
+## Personal home dashboards based on the Smashing (Ruby) framework
 
 For Smashing check out http://smashing.github.io/smashing for more information.
 
@@ -35,11 +35,12 @@ Example:
 The World Clock dashboard contains the following widgets:
 
 * [world_clock](https://gist.github.com/weilu/7688343)
-* utc_time
-* unix_time
-* beat_time
+* time_local (displaying the local timestamp)
+* time_utc (displaying the UTC timestamp)
+* time_unix (displaying the Epoch timestamp)
+* time_internet (displaying the time in .beats)
 
-The last three widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
+The bottom four widgets are not written in Ruby. With a little bit of cheating these are written in JavaScript.
 
 ![world clock and other times dashboard sample](assets/images/example-time-dashboard.png)
 
@@ -70,6 +71,8 @@ This dashboard contains info on fuel prices in HUF. I'm actually scraping those 
 ### Random quotes
 
 This dashboard get data from the https://wisdomapi.herokuapp.com/v1/random API.
+
+I have also implemented my own version `quotes_local` where I'm getting the quotes in two languages from a JSON file hosted on AWS S3.
 
 ![random quotes dashboard sample](assets/images/example-random-quotes-dashboard.png)
 
