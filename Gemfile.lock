@@ -27,7 +27,7 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     racc (1.5.2)
-    rack (2.1.4)
+    rack (2.1.4.2)
     rack-protection (2.0.5)
       rack
     rufus-scheduler (3.4.2)
